@@ -21,7 +21,8 @@ The application of data-mining technique to perform sentimental analysis involve
 3. Training and Evaluation of a machine learning model: The next application you will need to perform is to split the dataset into training sets and test sets. After that you can use the training set to train a machine learning model for sentimental analysis. This can be done using natural learning toolkit to evaluate various types of models.
 4.  Use the train model to classify new text: once you have trained and evaluated a machine learning model for sentimental analysis, it can be used to classify new text data. The natural learning toolkit can be used to predict the sentiment of new text documents. 
 
-Explanation of the experimental procedure, including the setting and optimisation of model hyperparameters during training, and approach to validation 
+Explanation of the experimental procedure, including the setting and optimisation of model hyperparameters during training, and approach to validation:
+
 The experimental procedure for training a natural language learning toolkit model for sentimental analysis involves the following steps. 
 1.	Pre-process the data: Before training a natural language processing, the first step to consider is to collect a large dataset of natural language text. This is done to ensure that the data is clean and can be used for training the model. The pre-processing steps include stemming, tokenization, and lemmatization. 
 2.	Setting up the model: It is necessary to design the model architecture which determine the performance of a natural language processor. This involves deciding on the number of layers (size of the model) and the model type (transformer).
@@ -31,23 +32,10 @@ The experimental procedure for training a natural language learning toolkit mode
 6.	Fine-tune the model: After evaluating the model and discovered that the validation set is not good enough, you can fine-tune the model by adjusting the model architecture and hyperparameters. 
 7.	Model Testing: The model performance can now be tested on a separate dataset to have the result of the final estimation.  
 Visualisation of the results
-There are several ways to the visualize the result of a sentimental analysis model. In this study I used the word cloud. Word clouds are used to visualize and to show the most common words in a dataset. It can be used to understand the most common words related with both positive and negative sentiment in a dataset. The size of the word always indicates its frequency. The word cloud can be generated using the word cloud library. The first thing to do is to create a list of all the word that appears in all negative reviews.  The code below can be used to generate the negative reviews. 
-wordcloud = WordCloud (width= 1000, height = 500, random_state=1, background_color='salmon', colormap='Pastel1', collocations=False, stopwords = STOPWORDS). Generate (negative_reviews_statments)
-plot_cloud (wordcloud)
+There are several ways to the visualize the result of a sentimental analysis model. In this study I used the word cloud. Word clouds are used to visualize and to show the most common words in a dataset. It can be used to understand the most common words related with both positive and negative sentiment in a dataset. The size of the word always indicates its frequency. The word cloud can be generated using the word cloud library. The first thing to do is to create a list of all the word that appears in all negative reviews. 
 
- 
-
-Fig. 1.  Visualization for negative reviews
-WE can also generate a word cloud from the positive reviews. The code below can be used to generate the positive reviews. 
-wordcloud = WordCloud (width= 1000, height = 500, random_state=1, background_color='salmon', colormap='Pastel1', collocations=False, stopwords = STOPWORDS). generate (positive_reviews_statments)
-plot_cloud (wordcloud)
-
-
- 
-Fig. 2. Visualization for the positive reviews. 
-
-Results Analysis and Discussion
-Basically, sentimental analysis using the natural language toolkit is an important tool that provides valuable insights into customer satisfaction either positive or negative review as well as the brand perception. In this study, 30 different hotels were selected based on the least review. I carried out the sentimental analysis and used a wordcloud which was generated from the wordcloud library. The wordcloud was generated for the negative review can be seen in fig 1 above. The wordcloud also generates for the positive reviews can be seen in fig 2. Some of the word counter for the negative reviews includes the following 
+Results Analysis and Discussion:
+Basically, sentimental analysis using the natural language toolkit is an important tool that provides valuable insights into customer satisfaction either positive or negative review as well as the brand perception. In this study, 30 different hotels were selected based on the least review. I carried out the sentimental analysis and used a wordcloud which was generated from the wordcloud library.  Some of the word counter for the negative reviews includes the following 
 Food with negative review of 965
 Restaurant with negative review of 708
 Service with negative review of 330
